@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irregular Snaps | Contribute Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1 class="main">Contribute here!!</h1>
+            <p>Required fields are provided by *</p>
+            <h2>Contact Information</h2>
+            <p>Name: *<input type="text" name="name" placeholder="Arun Mehra"></p>
+            <fieldset>
+                <legend>Gender *</legend>
+                <p>
+                    
+                    Male: <input type="radio" name="gender" id="male" required>
+                    Female: <input type="radio" name="gender" id="female" required>
+                </p>
+            </fieldset>
+            <p>Address: <textarea name="address" id="address" cols="100" rows="7"></textarea></p>
+            <p>Email: *<input type="email" name="mail" id="mail" placeholder="xxx@gmail.com"></p>
+            <p>Pin Code: *<input type="number" name="pincode" id="pincode" placeholder="123456"></p>
+
+            <h2>Payment Information</h2>
+            <p>Card Type: *
+                <select name="card_type" id="card_type" required>
+                    <option value="">--Select a card type--</option>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Master Card</option>
+                    <option value="RuPay">RuPay</option>
+                </select>
+            </p>
+            <p>Card Number: *<input type="number" name="cardno" id="cardno" placeholder="123456789"></p>
+            <p>Expiry Date: *<input type="date" name="expiry" id="expiry" required></p>
+            <p>CVV: *<input type="password" name="cvv" id="cvv" placeholder="123"></p>
+            <input type="submit" value="Pay Now">
+
+        </form>
+    </div>
+</body>
+</html>

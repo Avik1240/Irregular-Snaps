@@ -1,0 +1,22 @@
+body{
+    background-color: grey;
+}
+
+.circle{
+    background-color: white;
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    top: 200px;
+    transition-property: background,border-radius;
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
+
+}
+.circle:hover{
+    background-color: purple;
+    border-radius: 0px;
+    transform: rotateY(180deg);
+}
